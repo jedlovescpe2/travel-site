@@ -19,11 +19,12 @@ class RevealOnScroll{
 
     createWayPoints(){
 
+        //re-asign the to be assigned to the current item inside the each() function
+
         var self = this;
         this.itemsToReveal.each(function(){
 
             var currentItem = this;
-            //console.log(currentItem[0].attr('class'));
 
             new Waypoint({
                element: currentItem,
